@@ -1,0 +1,68 @@
+﻿@page "/"
+@using CompanyCrudBlazor.Models;
+@inject IJSRuntime JSRuntime;
+@inject CompanyCrudBlazor.Services.ICompanyService CompanyService
+<link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+
+<PageTitle>Empresa/Cliente</PageTitle>
+
+<h1>Empresas/Cliente
+</h1>
+
+<a href="/create" class="btn btn-success">Criar </a>
+
+<table class="table table-responsive table-striped">
+	<thead>
+		<th>Id</th>
+		<th>Nome</th>
+		<th>Site</th>
+		<th>Segmento</th>
+		<th> </th>
+		<th>Ações</th>
+	</thead>
+	<tbody>
+		@if(Companies != null && Companies.Count > 0)
+		{
+			foreach(var item in Companies)
+			{
+				<tr>
+					<td>@item.Id</td>
+					<td>@item.Name</td>
+					<td>@item.Site</td>
+					<td>@item.Segment</td>
+					<td>
+						<a href="/update/@item.Id" class="btn btn-warning">Atualizar</a>
+						<button class="btn btn-danger" @onclick="async () => await DeleteCompany(item.Id)">Deletar</button>
+					</td>
+				</tr>
+			}
+		}
+	</tbody>
+
+
+</table>
+
+
+@code{
+	List<Company> Companies = new();
+	protected override async Task OnInitializedAsync()
+	{
+		Companies = await CompanyService.FindAll();
+	}
+	async Task DeleteCompany(Guid id)
+	{
+		bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Tem certeza que deseja deletar?");
+		if(confirmed == false)
+		{
+			return;
+		}
+		else
+		{
+			var company = await CompanyService.GetBy(id);
+			await CompanyService.Delete(company);
+			Companies = await CompanyService.FindAll();
+			StateHasChanged();	
+		}
+	}
+
+}

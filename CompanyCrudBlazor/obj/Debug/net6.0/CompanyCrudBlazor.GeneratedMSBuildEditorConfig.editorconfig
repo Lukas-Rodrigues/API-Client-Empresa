@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = CompanyCrudBlazor
+build_property.RootNamespace = CompanyCrudBlazor
+build_property.ProjectDir = C:\Users\lucas\Desktop\Projetos\CrudBlazor\CompanyCrudBlazor\CompanyCrudBlazor\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lucas\Desktop\Projetos\CrudBlazor\CompanyCrudBlazor\CompanyCrudBlazor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Pages/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Pages/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cx9jdnzax6
+
+[C:/Users/lucas/Desktop/Projetos/CrudBlazor/CompanyCrudBlazor/CompanyCrudBlazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vuak5jxj9y
